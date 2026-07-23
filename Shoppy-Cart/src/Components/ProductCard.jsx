@@ -1,14 +1,9 @@
-const ProductCard = () => {
+const ProductCard = ({ product, onAddToCart }) => {
   return (
-    <div>
-      <div className="card">
-        <div className="card-text">
-          <h3>Mobile</h3>
-          <p>235</p>
-        </div>
-
-        <button>Add to Cart</button>
-      </div>
+    <div className="card">
+      <h3>{product.name}</h3>
+      <p>${product.price}</p>
+      <button onClick={() => onAddToCart(product)}>Add to Cart</button>
     </div>
   );
 };

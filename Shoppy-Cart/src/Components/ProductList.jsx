@@ -1,24 +1,20 @@
 import ProductCard from "./ProductCard";
 
-const ProductList = () => {
+const ProductList = ({ products, onAddToCart, onOpenAdd }) => {
   return (
-    <div className="product-page">
+    <div className="page">
       <div className="page-head">
         <h2>Products</h2>
-        <button>+ Add product</button>
+        <button onClick={onOpenAdd}>+ Add Product</button>
       </div>
       <div className="grid">
-        <h3>No product yet</h3>
-        <ProductCard />
-        {/* <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard /> */}
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            product={product}
+            onAddToCart={onAddToCart}
+          />
+        ))}
       </div>
     </div>
   );

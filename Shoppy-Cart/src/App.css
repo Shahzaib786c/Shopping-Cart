@@ -28,15 +28,14 @@
 .Cart-Btn svg {
   color: royalblue;
 }
-.Cart-Btn span{
-    position: absolute;
-    top: -4px;
-    right: -5px;
-    background-color: red;
-    font-size: 10px;
-    padding: 1px 4px;
-    border-radius: 50%;
-    
+.Cart-Btn span {
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  background-color: red;
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 50%;
 }
 .page {
   width: 100%;
