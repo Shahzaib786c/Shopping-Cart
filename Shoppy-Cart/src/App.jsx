@@ -48,7 +48,9 @@ function App() {
   });
   return (
     <div>
-      <Navbar cartCount={cartCount} onCartClick={() => setShowCart(true)} />
+      <Navbar
+       cartCount={cartCount} 
+       onCartClick={() => setShowCart(true)} />
       <ProductList
         products={products}
         onAddToCart={addToCart}
