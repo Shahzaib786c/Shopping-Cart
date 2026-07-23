@@ -2,7 +2,7 @@ import ProductCard from "./ProductCard";
 
 const ProductList = ({ products, onAddToCart, onOpenAdd }) => {
   return (
-    <div className="page">
+    <div className="product-page">
       <div className="page-head">
         <h2>Products</h2>
         <button onClick={onOpenAdd}>+ Add Product</button>
